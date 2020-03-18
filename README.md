@@ -1,2 +1,5 @@
 # clear-the-air-exercise
-exercise to practice the position property, among others
+
+Exercise to practice position and flexbox, among others.
+
+![desired_output](./img/desired_output)
