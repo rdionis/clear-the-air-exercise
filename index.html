@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile-style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 800px)"
+      href="css/style.css"
+    />
     <title>Clear the Air</title>
   </head>
   <body>
+    <!--box for the whole content-->
     <main>
       <div class="menu">
+        <!-- box for the top menu with logo, main navigation, hamburger navigation-->
         <img id="logo" src="./img/logo_001.png" alt="" />
+        <!--hamburger navigation-->
         <div class="hamburger-nav">
           <div class="hamburger"></div>
           <div class="hamburger"></div>
           <div class="hamburger"></div>
         </div>
+        <!--normal menu navigation-->
         <nav class="main-nav">
           <ul>
             <li>products</li>
@@ -25,7 +34,9 @@
           </ul>
         </nav>
       </div>
+      <!--box for the main content-->
       <div class="main-content">
+        <!--box for the text and buttons-->
         <article>
           <h1>Make your Startup web with our template</h1>
           <p>
@@ -33,14 +44,16 @@
             molestiae nisi eos numquam est mollitia, quasi facere corporis
             voluptate nihil.
           </p>
+          <!--box for the buttons-->
           <div class="buttons">
             <button id="button-1">Learn More</button>
             <button id="button-2">Get the App</button>
           </div>
         </article>
+        <!--box for the images-->
         <div class="phones">
-          <img id="white-phone" src="./img/phone_001.png" alt="" />
           <img id="black-phone" src="./img/phone_002.png" alt="" />
+          <img id="white-phone" src="./img/phone_001.png" alt="" />
         </div>
       </div>
     </main>
