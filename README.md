@@ -1,2 +1,5 @@
 # clear-the-air-exercise
-exercise to practice the position property, among others
+Exercise to practice position and flexbox, among others.
+
+![desired_output](/img/task_001_homepage.png)
+Format: ![Smartphone](url)
