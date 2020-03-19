@@ -2,4 +2,4 @@
 
 Exercise to practice position and flexbox, among others.
 
-![desired_output](./img/desired_output)
+![desired_output](./img/desired_output.png)
