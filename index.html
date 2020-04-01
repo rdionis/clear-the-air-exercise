@@ -9,6 +9,7 @@
       media="screen and (min-width: 800px)"
       href="css/style.css"
     />
+    <script type="text/javascript" src="/index.js"></script>
     <title>Clear the Air</title>
   </head>
   <body>
@@ -18,13 +19,14 @@
         <!-- box for the top menu with logo, main navigation, hamburger navigation-->
         <img id="logo" src="./img/logo_001.png" alt="" />
         <!--hamburger navigation-->
-        <div class="hamburger-nav">
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
+        <div class="hamburger-nav" onclick="toggleNav()">
+          <div class="hamburger one"></div>
+          <div class="hamburger two"></div>
+          <div class="hamburger three"></div>
         </div>
+
         <!--normal menu navigation-->
-        <nav class="main-nav">
+        <nav class="main-nav" id="navmenu">
           <ul>
             <li>products</li>
             <li>prices</li>

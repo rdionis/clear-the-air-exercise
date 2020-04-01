@@ -10,14 +10,18 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/bg_001.jpg);
+  /*
   display: flex;
+*/
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 main {
   width: 100%;
+  /*
   display: flex;
   flex-direction: column;
+*/
   color: white;
   position: relative;
 }
@@ -26,7 +30,9 @@ main {
   width: 95%;
   height: 10%;
   margin: 0.5em 0.5em 5vh 0.5em;
+  /*
   display: flex;
+*/
   justify-content: flex-end;
   justify-content: space-between;
   align-items: center;
@@ -37,18 +43,95 @@ main {
 }
 
 .main-nav {
-  display: none;
+  max-height: 0vh;
+  display: block;
+  overflow: hidden;
 }
 
 .hamburger {
   background-color: white;
-  width: 1.2rem;
-  height: 0.3vh;
+  width: 1.5rem;
+  height: 0.2rem;
   margin: 4px 0;
 }
-.main-content {
+
+.hamburger-nav {
+  position: absolute;
+  top: 0.1rem;
+  right: 1.5rem;
+}
+
+.hamburger.one {
+  background-color: lime;
+}
+.hamburger.two {
+  background-color: lightsalmon;
+}
+.hamburger.three {
+  background-color: hotpink;
+}
+
+/*DO NOT DO STUFF LIKE THIS ON HOVER*/
+/* .hamburger-nav:hover ~ .main-nav {
   display: flex;
-  flex-direction: column;
+} */
+
+/*DO NOT DO STUFF LIKE THIS ON HOVER*/
+/* .hamburger-nav:hover ~ .main-nav ul li {
+  list-style-type: none;
+  padding: 0.3em;
+  font-size: 0.8em;
+  font-weight: 700;
+} */
+
+.hamburger-nav:hover {
+  cursor: pointer;
+}
+.hamburger-nav:hover .hamburger.one {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.hamburger-nav:hover .hamburger.two {
+  /* animation-name: cross-two; */
+  /* display: none; */
+  transform: rotate(90deg);
+  position: absolute;
+}
+
+.hamburger-nav:hover .hamburger.three {
+  /* animation-name: cross-three; */
+  transform: rotate(-45deg);
+}
+/* 
+@keyframes cross-one {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes cross-two {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes cross-three {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+} */
+
+.main-content {
 }
 article {
   padding: 0 0.5em;
@@ -62,9 +145,6 @@ article p {
 }
 
 .buttons {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
 }
 
 button {
